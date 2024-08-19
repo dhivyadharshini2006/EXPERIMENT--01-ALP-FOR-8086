@@ -1,6 +1,10 @@
 # EXPERIMENT--01-ALP-FOR-8086
 Name :Dhivya Dharshini B
+
+
 Roll no : 212223240031
+
+
 Date of experiment : 19/08/2024
 
 
@@ -93,9 +97,27 @@ ret
  ![Screenshot 2024-08-16 094913](https://github.com/user-attachments/assets/2f225459-66ce-4c50-9e85-8479a5d67e44)
 
 ## Subtraction   of 8 bit numbers  ALP 
+```
+org 100h
+MOV al,20h;
+MOV bl,[8778h];
+SUB bl,al;
+MOV [8798h],bl;
+ret
+```
+
+
  
 ## Output  
+
+
+![Screenshot 2024-08-16 095259](https://github.com/user-attachments/assets/619c37d6-22f6-48ff-95dd-239b6818c334)
+
+
+
 ## Multiplication alp 
+
+
  ## Output  
 
 
