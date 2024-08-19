@@ -116,14 +116,32 @@ ret
 
 
 ## Multiplication alp 
-
+```
+org 100h
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6063h],bl;
+ret
+```
 
  ## Output  
+![Screenshot 2024-08-16 095539 (3)](https://github.com/user-attachments/assets/3d7e60bf-58a9-42ee-8fcb-8983e04e049f)
 
 
 ## Division alp 
+```
+org 100h
+MOV al,26h;
+MOV bl,[2369h];
+DIV bl;
+MOV [2399h],al;
+ret
+```
+
 
 ## Output  
+![image](https://github.com/user-attachments/assets/30b68fef-9698-4718-8355-2ff6775e2aa3)
 
 
 ## Result :
