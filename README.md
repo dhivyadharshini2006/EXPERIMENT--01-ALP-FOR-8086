@@ -146,7 +146,7 @@ ret
 
 ## Result :
  
-
+Thus, ALP for fundamental arithmetic operations are executed successfully
 
 
 
