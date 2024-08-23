@@ -143,11 +143,61 @@ ret
 
 ## Output  
 ![image](https://github.com/user-attachments/assets/30b68fef-9698-4718-8355-2ff6775e2aa3)
+## OR Operation
+```
+org 100H
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+ret
+```
+## Output
+![image](https://github.com/user-attachments/assets/40339fbd-821c-461c-b2f3-a788a6eb8e8c)
+
+
+## AND Operation
+```
+org 100H
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX;
+ret
+```
+
+## Output
+![image](https://github.com/user-attachments/assets/44ff92a2-809b-4952-935a-7cbcc3f3babe)
+## XOR Operation
+```
+org 100H
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+XOR AX,BX;
+ret
+```
+## Output
+
+![image](https://github.com/user-attachments/assets/8bcf2e83-b701-4e5e-aefb-c87077b59ca3)
+
+## NOT Operation
+```
+org 100H
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX;
+MOV [SI+6],AX;
+ret
+```
+## Output
+
+![image](https://github.com/user-attachments/assets/9220e2cb-a164-4365-bb97-5a39f35e75ff)
 
 
 ## Result :
  
-Thus, ALP for fundamental arithmetic operations are executed successfully
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
 
 
 
